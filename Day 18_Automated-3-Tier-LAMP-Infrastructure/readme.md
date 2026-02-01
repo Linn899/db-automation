@@ -6,7 +6,6 @@ This project demonstrates the automated deployment of a scalable 3-tier web arch
 The infrastructure is configured to work behind a Corporate Load Balancer (LBR) and uses automated shell and SQL scripts to ensure consistent deployments across multiple servers.
 
 ## 🏗️ Architecture
-
 - **Web Tier:** Apache (HTTPD) running on custom **Port 8084** with PHP integration.
 - **Database Tier:** MariaDB Server with secured remote access.
 
@@ -17,7 +16,6 @@ The infrastructure is configured to work behind a Corporate Load Balancer (LBR) 
 - **Health Monitoring:** Included a PHP-based health check endpoint for Load Balancer integration.
 
 ## 📂 File Structure
-- `scripts/install_ansible.sh`: Global setup of the automation engine.
 - `scripts/deploy_web_tier.sh`: Automated Apache/PHP installer with port verification.
 - `database/setup.sql`: Secure database and user provisioning.
 - `web/healthcheck.php`: Connectivity test between Web and Database tiers.
