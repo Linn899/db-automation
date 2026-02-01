@@ -17,7 +17,7 @@ The infrastructure is configured to work behind a Corporate Load Balancer (LBR) 
 - **Health Monitoring:** Included a PHP-based health check endpoint for Load Balancer integration.
 
 ## 📂 File Structure
-- `scripts/install_ansible.sh`: Global setup of the automation engine.
+
 - `scripts/deploy_web_tier.sh`: Automated Apache/PHP installer with port verification.
 - `database/setup.sql`: Secure database and user provisioning.
 - `web/healthcheck.php`: Connectivity test between Web and Database tiers.
@@ -29,5 +29,6 @@ The infrastructure is configured to work behind a Corporate Load Balancer (LBR) 
    Execute `sudo ./scripts/deploy_web_tier.sh` on all App hosts.
 3. **Verify Connection:**
    Navigate to `http://<app-server-ip>:8084/healthcheck.php`.
+
 
 
